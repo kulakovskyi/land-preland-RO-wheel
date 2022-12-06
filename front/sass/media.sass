@@ -64,7 +64,7 @@
   .bonus
     &__footer
       transform-origin: right bottom
-      transform: scale(0.9)
+      transform: scale(0.7)
       bottom: 20px
       right: 20px
     &__main
@@ -75,7 +75,7 @@
   .bonus
     &__footer
       transform-origin: right bottom
-      transform: scale(0.8)
+      transform: scale(0.6)
       bottom: 20px
       right: 20px
 
@@ -91,7 +91,7 @@
         top: 10%
     &__footer
       transform-origin: right bottom
-      transform: scale(0.9)
+      transform: scale(0.56)
 
 @media screen and (max-width: 1400px) and (max-height: 720px)
   .bonus
@@ -117,6 +117,12 @@
       &-wrapper
         transform: scale(0.65)
         bottom: -155px
+
+@media screen and (max-width: 1300px) and (min-height: 900px)
+  .bonus
+    &__main
+      &-txt
+        top: 15%
 
 @media screen and (max-width: 1300px) and (max-height: 630px)
   .bonus
@@ -145,12 +151,15 @@
     &__secondWin
       transform: scale(0.75)
     &__footer
-      transform: scale(0.66)
+      transform: scale(0.46)
 
 @media screen and (max-width: 1250px)
   .bonus
     &__footer
-      transform: scale(0.66)
+      transform: scale(0.46)
+    &__main
+      &-txt
+        top: 15%
 
 @media screen and (max-width: 1125px)
   .bonus
@@ -161,14 +170,18 @@
       &-logo
         width: 308px
     &__footer
-      transform: scale(0.57)
+      transform: scale(0.37)
+    &__main
+      &-txt
+        transform: translateX(-50%) scale(0.75)
+        top: 13%
 
 @media screen and (max-width: 1046px)
   .bonus
     &::before
       bottom: -229px
     &__footer
-      transform: scale(0.54)
+      transform: scale(0.34)
     &__main
       &-logo
         width: 308px
@@ -193,7 +206,7 @@
 @media screen and (max-width: 910px) and (orientation: landscape)
   .bonus
     &__footer
-      transform: scale(0.44)
+      transform: scale(0.34)
 
 /****************************************TABLET***************************************************/
 
@@ -203,14 +216,19 @@
       width: 100%
       right: 0
       bottom: 0
-      padding: 20px 15px
+      padding: 15px 15px
       background: $blue
       transform: scale(1)
       flex-direction: row
       justify-content: center
       align-items: center
-      &-top
+      &-text
         margin: 0 23px 0 0
+        font-size: 18px
+        line-height: 23px
+      &-copy
+        max-width: 147px
+
     &__main
       &-logo
         width: 308px
@@ -250,6 +268,7 @@
     &__main
       &-txt
         top: 14%
+        transform: translateX(-50%) scale(0.8)
       &-wrapper
         bottom: -70px
 
@@ -290,7 +309,7 @@
       transform: scale(0.55)
     &__main
       &-txt
-        transform: translateX(-50%) scale(0.9)
+        transform: translateX(-50%) scale(0.75)
 
 /****************************************MOBILE***************************************************/
 
@@ -339,8 +358,9 @@
         font-size: 24px
         line-height: 40px
       &-title
-        font-size: 96px
-        line-height: 114px
+        font-size: 42px
+        line-height: 46px
+        text-align: center
         .wrap
           white-space: normal
           display: flex
@@ -360,10 +380,17 @@
         line-height: 31px
         padding: 31px 57px 29px
     &__firstWin
+      &-title
+        &::after
+          margin-top: 2px
+        span
+          margin-top: 15px
+          br
+            display: block
       &-btn
         font-size: 24px
         line-height: 31px
-        padding: 31px 74px 29px
+        padding: 31px 58px 29px
       .overlayChip-1
         bottom: 109px
         left: -3px
@@ -388,9 +415,27 @@
         right: -37px
     &::before
       content: none
+    &__secondWin
+      .overlayChip-1
+        bottom: 9px
+      .overlayChip-7
+        bottom: 10px
+      .overlayChip-2
+        bottom: -214px
+      &-btn
+        padding: 31px 39px 29px
+      &-title
+        font-size: 34px
+        line-height: 44px
+        &::before
+          margin-bottom: 44px
+        .wrap
+          span
+            font-size: 34px
+            line-height: 28px
+            margin: 0
     &__footer
       position: absolute
-      flex-direction: column
       bottom: -170px
       &-top
         margin: 0 0 35px 0
@@ -403,6 +448,7 @@
       &-txt
         font-size: 35px
         line-height: 48px
+        transform: translateX(-50%) scale(0.9)
         .top
           left: -15px
           &::after
@@ -470,6 +516,17 @@
     &__secondWin
       transform: scale(0.9)
 
+@media screen and (max-width: 380px)
+  .bonus
+    &__main
+      &-txt
+        transform: translateX(-50%) scale(0.8)
+    &__footer
+      &-text
+        font-size: 16px
+        line-height: 20px
+
+
 @media screen and (max-width: 380px) and (orientation: portrait) and (max-height: 650px)
   .bonus
     &__main
@@ -503,7 +560,7 @@
       transform: scale(0.75)
     &__main
       &-txt
-        transform: translateX(-50%) scale(0.8)
+        transform: translateX(-50%) scale(0.7)
       &-wrapper
         transform: scale(0.55)
         bottom: 15px
@@ -550,7 +607,7 @@
   .bonus
     &__main
       &-txt
-        top: -40px
+        top: -30px
       &-wrapper
         transform: scale(0.45)
         bottom: -90px
@@ -578,7 +635,7 @@
       &-logo
         width: 177px
       &-txt
-        top: -58px
+        top: -50px
         transform: translateX(-50%) scale(0.25)
       &-wrapper
         transform: scale(0.35)
